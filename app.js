@@ -4,7 +4,7 @@
 // // >=30 obesity
 
 //function
-function bmi(weight,height){
+function checkBmi(weight,height){
     var bmi = weight/(height*height);
     if (bmi<18.5) {
         console.log("underweight");
