@@ -17,3 +17,15 @@ function checkBmi(weight,height){
     }
     return bmi;
 }
+
+//"ABC" -> "CBA"
+
+function reverseString(input) {
+    let result = "";
+    let indexLength = input.length;
+    for (let i = indexLength-1; i >= 0; i--) {
+    // console.log(input[i]);
+    result = result+input[i];
+    }
+    return result;
+}
