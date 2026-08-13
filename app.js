@@ -20,14 +20,12 @@ function checkBmi(weight,height){
 
 //"ABC" -> "CBA"
 
-let getString = "";
-
 function reverseString(input) {
-
+    let result = "";
     let indexLength = input.length;
     for (let i = indexLength-1; i >= 0; i--) {
     // console.log(input[i]);
-    getString = getString+input[i];
+    result = result+input[i];
     }
-    return getString;
+    return result;
 }
