@@ -29,3 +29,38 @@ function reverseString(input) {
     }
     return result;
 }
+
+
+// printStar(x)
+
+// 1. loop Star
+// 2. loop Row  
+
+//Dont delete my work!
+function printStar(numberOfStar) {
+    let loopStar = "";
+    let loopRow = "";
+    for (let i = 0; i < numberOfStar; i++) {
+        loopRow = loopRow + loopStar + "*" + "\n"
+        for (let y = 0; y < 1; y++) {
+            loopStar = loopStar +"*";
+            }
+        }
+    console.log(loopRow);   
+}
+
+
+//Correct version
+function printStar (numberOfStar) {
+    let array = [];
+
+    for (let y = 0; y < numberOfStar;y++){
+        let row = "";
+        for (let i = 0; i <= y; i++) {
+            row = row + "*";    
+            }
+        array.push(row)    
+    }
+
+    console.log(array.join("\n"))
+}
