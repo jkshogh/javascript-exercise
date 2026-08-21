@@ -64,3 +64,53 @@ function printStar (numberOfStar) {
 
     console.log(array.join("\n"))
 }
+
+
+//mirrorString
+
+
+//Method 1:
+function mirrorString(wording) {
+    let wordingLength = wording.length;
+    let reverseWording = "";
+
+    for (let i = 1; i <= wordingLength; i++) {
+        reverseWording = reverseWording + wording[wordingLength-i] ;
+    }
+
+    if (wording == reverseWording) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//Method 2:
+
+// m 0=4
+// a 1=3
+// d 2=2
+// a 3=1
+// m 4=0
+
+function mirrorStringv1(wording) {
+    let wordingLength = wording.length;
+    let result = 0;
+
+    // wording[0]=wording[wordingLength-1]
+    // wording[1]=wording[wordingLength-2]
+    // wording[2]=wording[wordingLength-3]
+
+    for (let i = 0; i < wordingLength; i++) {
+        if (wording[i]==wording[wordingLength-(i+1)]) {
+        result = result + 0 ;
+        } else {
+        result = 1;
+        }
+    }
+
+    if (result==0) {
+        return true;
+    } else {
+        return false;
+    }
+}
