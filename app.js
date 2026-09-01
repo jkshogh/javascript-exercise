@@ -29,6 +29,7 @@ function reverseString(input) {
     }
     return result;
 }
+<<<<<<< HEAD
 
 
 // printStar(x)
@@ -64,3 +65,5 @@ function printStar (numberOfStar) {
 
     console.log(array.join("\n"))
 }
+=======
+>>>>>>> feat/reverse-string
