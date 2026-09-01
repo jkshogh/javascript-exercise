@@ -114,3 +114,15 @@ function mirrorStringv1(wording) {
         return false;
     }
 }
+
+
+
+// Find the max of two numbers
+
+function findMaxNumber(a,b) {
+    if (a>b) {
+        return a;
+    } else {
+        return b;
+    }
+}
