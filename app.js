@@ -72,3 +72,26 @@ function findMaxNumber(a,b) {
         return b;
     }
 }
+
+function mirrorStringv1(wording) {
+    let wordingLength = wording.length;
+    let result = 0;
+
+    // wording[0]=wording[wordingLength-1]
+    // wording[1]=wording[wordingLength-2]
+    // wording[2]=wording[wordingLength-3]
+
+    for (let i = 0; i < wordingLength; i++) {
+        if (wording[i]==wording[wordingLength-(i+1)]) {
+        result = result + 0 ;
+        } else {
+        result = 1;
+        }
+    }
+
+    if (result==0) {
+        return true;
+    } else {
+        return false;
+    }
+}
