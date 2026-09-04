@@ -64,3 +64,7 @@ function printStar (numberOfStar) {
 
     console.log(array.join("\n"))
 }
+
+function findMaxNumber() {
+    //
+}
